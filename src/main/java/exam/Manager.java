@@ -2,7 +2,7 @@ package exam;
 
 public class Manager extends Employee{
 
-    protected final double EXTRA_DISCOUNT = .05;
+    protected static final double EXTRA_DISCOUNT = .05;
     private double salary;
     private Cloth[] clothingItems;
 
@@ -33,5 +33,10 @@ public class Manager extends Employee{
     @Override
     public void printInfo(){
         System.out.println(getName() + " makes " + getSalary() + " and his shopping bag consists of the following clothing items: " + UtilityMethods.getClothingItems(clothingItems));
+    }
+
+    public static double getDiscount() {
+        double discount = EXTRA_DISCOUNT+ Employee.getDISCOUNT();
+        return discount;
     }
 }

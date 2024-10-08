@@ -28,4 +28,14 @@ public class UtilityMethods {
 
     }
 
+    public static void printClassNamesOfPayableEntities(Payable[] payables){
+        System.out.println(payables);
+    }
+
+    public static void checkCustomerDiscount(Customer customer){
+        System.out.println("Student qualifies for a discount of " + Student.getDISCOUNT());
+        System.out.println("HourlyEmployee qualifies for a discount of " + HourlyEmployee.DISCOUNT);
+        System.out.println("Manager qualifies for a discount of " + Manager.getDiscount());
+    }
+
 }

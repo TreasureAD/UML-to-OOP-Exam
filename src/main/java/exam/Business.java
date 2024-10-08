@@ -12,4 +12,13 @@ public class Business implements Payable{
         this.productQtySupplied = productQtySupplied;
         this.productPrice = productPrice;
     }
+
+
+    public boolean payTaxOnEarnings(){
+
+        if (productPrice*productQtySupplied > 100000){
+            return true;
+        }
+        return false;
+    }
 }

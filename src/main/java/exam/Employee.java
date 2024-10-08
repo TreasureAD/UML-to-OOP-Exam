@@ -2,14 +2,14 @@ package exam;
 
 public class Employee extends Customer implements TerminateAble, Payable{
 
-    protected final double DISCOUNT = .10;
+    protected static final double DISCOUNT = .10;
 
     // Constructor
     public Employee(String name, Size size, Cloth[] clothingItems) {
         super(name, size, clothingItems);
     }
 
-    public double getDISCOUNT() {
+    public static double getDISCOUNT() {
         return DISCOUNT;
     }
 

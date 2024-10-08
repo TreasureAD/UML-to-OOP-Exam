@@ -5,7 +5,6 @@ public class HourlyEmployee extends Employee {
     private float hoursWorked;
     private double hourlyWage;
 
-
     public HourlyEmployee(String name, Size size, Cloth[] clothingItems) {
         super(name, size, clothingItems);
     }
@@ -24,6 +23,7 @@ public class HourlyEmployee extends Employee {
     public float getHasWorked() {
         return hoursWorked;
     }
+
 
     public void setHasWorked(float hoursWorked) {
         if (hoursWorked > 0){

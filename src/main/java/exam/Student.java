@@ -4,7 +4,7 @@ public class Student extends Customer{
 
     private long studentID;
     private static long studentsCounter = 0;
-    private final double DISCOUNT = .05;
+    private static final double DISCOUNT = .05;
     private Size size;
 
 
@@ -12,6 +12,10 @@ public class Student extends Customer{
     public Student(String name, Size size, Cloth[] clothingItems) {
         super(name, size, clothingItems);
         studentsCounter++;
+    }
+
+    public static double getDISCOUNT() {
+        return DISCOUNT;
     }
 
     //Setter and getter

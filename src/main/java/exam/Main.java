@@ -46,8 +46,15 @@ public class Main {
         System.out.println("It is " + student1.checkFitting(clothingItem3, student1.getSize()) + " that the " + clothingItem3.getName() + " fits " + student1.getName());
 
         //PART 8 BUSINESS TAX EARNINGS
+        Business business = new Business("Acme", 10000, 20);
+        System.out.println("Is this biz taxable?: " + business.payTaxOnEarnings());
 
-
+        //INCOMPLETE PROBLEMS---------------------------------------------------------------------------------------------
+        //PART 9 PRINT NAMES OF PAYABLE ENTITIES
+        //PART 10 DISCOUNTS
+        UtilityMethods.checkCustomerDiscount(employee);
+        //PART 11
+        //--------------------------------------------------------------------------------------------------------------------------
     }
 
 }
